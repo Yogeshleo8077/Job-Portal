@@ -20,7 +20,7 @@ export const env = {
     accessExpiresIn: process.env.JWT_ACCESS_EXPIRES_IN ?? '15m',
     refreshExpiresIn: process.env.JWT_REFRESH_EXPIRES_IN ?? '7d',
   },
-  corsOrigin: (process.env.CORS_ORIGIN ?? 'http://localhost:3000').split(','),
+  corsOrigin: (process.env.CORS_ORIGIN ?? 'http://localhost:3000,https://job-portal-2zfb.vercel.app').split(','),
   anthropic: {
     apiKey: process.env.ANTHROPIC_API_KEY ?? '',
     model: process.env.ANTHROPIC_MODEL ?? 'claude-sonnet-5',
